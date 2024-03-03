@@ -1,1 +1,20 @@
-# DaveP223.github.io/canvass.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DP Portfolio</title>
+  <style>
+    body{
+        font-family: Times New Roman, Arial;
+        text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+<h1>Dave Pierre</h1>
+<p><a href="mailto:davepierred@yahoo.com">davepierred@yahoo.com</a></p>
+
+<a href="cartoon.html">View Masterpiece</a>
+</body>
+</html>
