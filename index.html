@@ -4,6 +4,50 @@
     <meta charset="UTF-8">
     <title>ClassWork</title>
     <link rel="stylesheet" href="car.css">
+    <style>
+         .completed {
+            text-decoration: line-through;
+        }
+
+        /* Add styles for celebratory animation */
+        @keyframes celebration {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .celebration {
+            animation: celebration 1s ease;
+        }
+           .priority-high {
+            color: red;
+        }
+
+        .priority-medium {
+            color: yellow;
+        }
+
+        .priority-low {
+            color: blue;
+        }
+
+        /* Style for priority dropdown */
+        .priority-dropdown {
+            margin-left: 10px;
+        }
+        .message {
+            text-align: center;
+            font-weight: bold;
+            color: green;
+            font-size: 24px; /* Adjust the font size as needed */
+            margin-top: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+
+    </style>
     
 </head>
 To Do List
