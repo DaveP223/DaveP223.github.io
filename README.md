@@ -67,7 +67,7 @@
             </ul>
 
         </details>
-
+<button class="deleteButton" onclick="deleteSubtask(this)">Delete</button>
     </li>
     <li id="threePtmade">
         <details>
@@ -104,6 +104,7 @@
                 <button class="deleteButton" onclick="deleteSubtask(this)">Delete</button>
             </ul>
         </details>
+        <button class="deleteButton" onclick="deleteSubtask(this)">Delete</button>
     </li>
     <li id="twoPtmade">
         <details>
@@ -141,6 +142,7 @@
             </ul>
 </ul>
 </details>
+<button class="deleteButton" onclick="deleteSubtask(this)">Delete</button>
 </li>
 <h2>Completed Task</h2>
 <ul id="completedTasks"></ul>
@@ -157,12 +159,12 @@ function setPriorityColor(dropdown) {
         const parentTask = document.getElementById(parentTaskId);
 
         if (checkbox.checked) {
-            // Trigger celebratory animation
+            // Triggering celebratory animation
             listItem.classList.add('celebration');
-            // Move the completed subtask to the completed tasks section
+            // Moving the completed subtask to the completed tasks section
             document.getElementById('completedTasks').appendChild(listItem);
 
-            // Create an "Add back" button
+            // Creating an "Add back" button
             const addBackButton = document.createElement('button');
             addBackButton.textContent = 'Add Back';
             addBackButton.className = 'addBackButton';
