@@ -12,7 +12,7 @@
 <body>
 <ul>
 
-    <li id="cardioTask"><button class="deleteButton" onclick="deleteSubtask(this)">Delete</button>
+    <li id="cardioTask">
         <details>
             <summary>Cardio: 20 Min Per Machine</summary>
             <select class="priority-dropdown" onchange="setPriorityColor(this)">
@@ -38,7 +38,7 @@
                 <button class="deleteButton" onclick="deleteSubtask(this)">Delete</button>
             </ul>
         </details>
-
+<button class="deleteButton" onclick="deleteSubtask(this)">Delete</button>
     </li>
     <li id="pushupsTask">
         <details>
