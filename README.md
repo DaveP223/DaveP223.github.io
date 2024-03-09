@@ -140,10 +140,12 @@
                 <label for="2pt5">100 Right Corner Midrange</label>
                 <button class="deleteButton" onclick="deleteSubtask(this)">Delete</button>
             </ul>
-</ul>
+            
 </details>
 <button class="deleteButton" onclick="deleteSubtask(this)">Delete</button>
+
 </li>
+</ul>
 <h2>Completed Task</h2>
 <ul id="completedTasks"></ul>
 <div class="message" id="completionMessage"></div>
