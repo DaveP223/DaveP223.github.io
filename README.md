@@ -12,7 +12,7 @@
 <body>
 <ul>
 
-    <li id="cardioTask">
+    <li id="cardioTask"><button class="deleteButton" onclick="deleteSubtask(this)">Delete</button>
         <details>
             <summary>Cardio: 20 Min Per Machine</summary>
             <select class="priority-dropdown" onchange="setPriorityColor(this)">
@@ -21,7 +21,7 @@
                 <option value="priority-low">Low</option>
                 <option value="priority-neutral">Neutral</option>
             </select>
-            <button class="deleteButton" onclick="deleteSubtask(this)">Delete</button>
+           
             <ul>
                 <input type="checkbox" id="cardio1" onclick="completeAndDelete(this, 'cardioTask'); displayTaskCompleted();">
                 <label for="cardio1">Treadmill</label>
