@@ -24,14 +24,17 @@
             <ul>
                 <input type="checkbox" id="cardio1" onclick="completeAndDelete(this, 'cardioTask'); displayTaskCompleted();">
                 <label for="cardio1">Treadmill</label>
+                <button class="deleteButton" onclick="deleteSubtask(this)">Delete</button>
             </ul>
             <ul>
                 <input type="checkbox" id="cardio2" onclick="completeAndDelete(this, 'cardioTask'); displayTaskCompleted();">
                 <label for="cardio2">Steps</label>
+                <button class="deleteButton" onclick="deleteSubtask(this)">Delete</button>
             </ul>
             <ul>
                 <input type="checkbox" id="userinput1"onclick="completeAndDelete(this, 'cardioTask'); displayTaskCompleted();">
                 <input type="text" name="userinput1"/>
+                <button class="deleteButton" onclick="deleteSubtask(this)">Delete</button>
             </ul>
         </details>
 
@@ -49,14 +52,17 @@
 
                 <input type="checkbox" id="pushup1" onclick="completeAndDelete(this, 'pushupsTask'); displayTaskCompleted();">
                 <label for="pushup1">Classic</label>
+                <button class="deleteButton" onclick="deleteSubtask(this)">Delete</button>
             </ul>
             <ul>
                 <input type="checkbox" id="pushup2" onclick="completeAndDelete(this, 'pushupsTask'); displayTaskCompleted();">
                 <label for="pushup2">Close Grip</label>
+                <button class="deleteButton" onclick="deleteSubtask(this)">Delete</button>
             </ul>
             <ul>
                 <input type="checkbox" id="userinput2" onclick="completeAndDelete(this, 'pushupsTask'); displayTaskCompleted();">
                 <input type="text" name="userinput2"/>
+                <button class="deleteButton" onclick="deleteSubtask(this)">Delete</button>
             </ul>
 
         </details>
@@ -74,22 +80,27 @@
             <ul>
                 <input type="checkbox" id="3pt1" onclick="completeAndDelete(this, 'threePtmade'); displayTaskCompleted();">
                 <label for="3pt1">100 left corner 3pt</label>
+                <button class="deleteButton" onclick="deleteSubtask(this)">Delete</button>
             </ul>
             <ul>
                 <input type="checkbox" id="3pt2" onclick="completeAndDelete(this, 'threePtmade'); displayTaskCompleted();">
                 <label for="3pt2">100 upper left side 3pt</label>
+                <button class="deleteButton" onclick="deleteSubtask(this)">Delete</button>
             </ul>
             <ul>
                 <input type="checkbox" id="3pt3" onclick="completeAndDelete(this, 'threePtmade'); displayTaskCompleted();">
                 <label for="3pt3">100 Middle 3pt</label>
+                <button class="deleteButton" onclick="deleteSubtask(this)">Delete</button>
             </ul>
             <ul>
                 <input type="checkbox" id="3pt4" onclick="completeAndDelete(this, 'threePtmade'); displayTaskCompleted();">
                 <label for="3pt4">100 upper right side 3pt</label>
+                <button class="deleteButton" onclick="deleteSubtask(this)">Delete</button>
             </ul>
             <ul>
                 <input type="checkbox" id="3pt5" onclick="completeAndDelete(this, 'threePtmade'); displayTaskCompleted();">
                 <label for="3pt5">100 right corner 3pt</label>
+                <button class="deleteButton" onclick="deleteSubtask(this)">Delete</button>
             </ul>
         </details>
     </li>
@@ -105,22 +116,27 @@
             <ul>
                 <input type="checkbox" id="2pt1" onclick="completeAndDelete(this, 'twoPtmade'); displayTaskCompleted();">
                 <label for="2pt1">100 Left Corner Midrange</label>
+                <button class="deleteButton" onclick="deleteSubtask(this)">Delete</button>
             </ul>
             <ul>
                 <input type="checkbox" id="2pt2" onclick="completeAndDelete(this, 'twoPtmade'); displayTaskCompleted();">
                 <label for="2pt2">100 Upper Left Side Midrange</label>
+                <button class="deleteButton" onclick="deleteSubtask(this)">Delete</button>
             </ul>
             <ul>
                 <input type="checkbox" id="2pt3" onclick="completeAndDelete(this, 'twoPtmade'); displayTaskCompleted();">
                 <label for="2pt3">100 Middle Midrange</label>
+                <button class="deleteButton" onclick="deleteSubtask(this)">Delete</button>
             </ul>
             <ul>
                 <input type="checkbox" id="2pt4" onclick="completeAndDelete(this, 'twoPtmade'); displayTaskCompleted();">
                 <label for="2pt4">100 Upper Right Side Midrange</label>
+                <button class="deleteButton" onclick="deleteSubtask(this)">Delete</button>
             </ul>
             <ul>
                 <input type="checkbox" id="2pt5" onclick="completeAndDelete(this, 'twoPtmade'); displayTaskCompleted();">
                 <label for="2pt5">100 Right Corner Midrange</label>
+                <button class="deleteButton" onclick="deleteSubtask(this)">Delete</button>
             </ul>
 </ul>
 </details>
@@ -172,6 +188,10 @@ function setPriorityColor(dropdown) {
                   document.getElementById('completionMessage').textContent = 'All Tasks 100 % Completed';
             }
         }
+         function deleteSubtask(button) {
+        const listItem = button.parentNode;
+        listItem.remove();
+    }
     </script>
 </body>
 </html>
