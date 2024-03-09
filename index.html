@@ -146,9 +146,10 @@
    <button class="deleteButton" onclick="deleteSubtask(this)">Delete</button>
 </li>
 </ul>
-<h2>Completed Task</h2>
+<h2>Completed Task<div class="message" id="completionMessage"></div>
+</h2>
 <ul id="completedTasks"></ul>
-<div class="message" id="completionMessage"></div>
+
 <script>
 function setPriorityColor(dropdown) {
             const priority = dropdown.value;
