@@ -85,3 +85,8 @@
                   cursor: pointer;
                   color: green;
               }
+              .deleteButton {
+            margin-left: 10px;
+            cursor: pointer;
+            color: red;
+        }
