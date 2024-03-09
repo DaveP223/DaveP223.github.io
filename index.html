@@ -159,12 +159,12 @@ function setPriorityColor(dropdown) {
         const parentTask = document.getElementById(parentTaskId);
 
         if (checkbox.checked) {
-            // Trigger celebratory animation
+            // Triggering celebratory animation
             listItem.classList.add('celebration');
-            // Move the completed subtask to the completed tasks section
+            // Moving the completed subtask to the completed tasks section
             document.getElementById('completedTasks').appendChild(listItem);
 
-            // Create an "Add back" button
+            // Creating an "Add back" button
             const addBackButton = document.createElement('button');
             addBackButton.textContent = 'Add Back';
             addBackButton.className = 'addBackButton';
