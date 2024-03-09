@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>ClassWork</title>
-    <link rel="stylesheet" href="car.css">
     <style>
      /* Add your CSS styles here */
        body {
